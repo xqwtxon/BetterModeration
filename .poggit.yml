@@ -1,0 +1,9 @@
+--- # Open the CI at https://poggit.pmmp.io/ci/xqwtxon/BetterModeration
+build-by-default: true
+branches:
+- main
+projects:
+  BetterModeration:
+    path: ""
+    icon: "BetterModeration.png"
+...
