@@ -1,0 +1,87 @@
+---
+# BetterModeration
+# Welcome to BetterModeration Configuration. You can customize everything here.
+# If you want to use colors, you can use &, {COLOR}, or even %COLOR% syntax instead of using §
+
+# Plugin Configuration Version
+# Please do not change this at anyway. Please change this for internal use only.
+Config-Version: 0.0.1
+
+# Ban Kick Messages
+# It contains messages that you can customize of it.
+# Ban Kick Message and Join Message
+ban-kick-message-without-reason: "&cYou have been banned on the server!"
+ban-join-message-without-reason: "&cYou have been banned on the server!"
+ban-kick-message-with-reason: "&cYou have been banned on the server.\n&bReason: {reason}"
+ban-join-message-with-reason: "&cYou have been banned on the server.\n&bReason: {reason}"
+ban-kick-message-with-duration: "&cYou have been banned on the server.\n&eYour ban ends at: {duration}"
+ban-join-message-with-duration: "&cYou have been banned on the server.\n&eYour ban ends at: {duration}"
+ban-kick-message-with-duration-and-reason: "&cYou have been banned on the server.\n&bReason: {reason}\n&eYour ban ends at: {duration}"
+ban-join-message-with-duration-and-reason: "&cYou have been banned on the server.\n&bReason: {reason}\n&eYour ban ends at: {duration}"
+
+# Kick Messages
+# It contains messages that you can customize of it.
+kick-message-without-reason: "&cYou have been kicked from the server!"
+kick-message-with-reason: "&cYou have been kicked from the server!\n&bReason: {reason}"
+
+
+# Just Follow the format.
+
+
+# Discord Webhook
+# You can follow the guide instruction on https://github.com/xqwtxon/BetterModeration/wiki/Discord-Webhook
+discord-webhook:
+     # It should enable the Discord Webhook Logging?
+     enabled: false
+     # Ban Webhook
+     ban-webhook: ""
+     kick-webhook: ""
+     freeze-webhook: ""
+     mute-webhook: ""
+# Discord Messages
+# Please Note: The message has limit to 2000 characters due the discord limitations.
+discord-message:
+     ban-webhook:
+         color: "#ff0000" # Example: #7289da
+         title: "New Banned!"
+         description: "{name} was banned by {source} for {reason}!
+         footer: "BetterModeration For PocketMine"
+     kick-webhook:
+         color: "#ff0000" # Example: #7289da
+         title: "New Kicked!"
+         description: "{name} was kicked by {source} for {reason}!
+         footer: "BetterModeration For PocketMine"
+     freeze-webhook:
+         color: "#ff0000" # Example: #7289da
+         title: "New Frozen!"
+         description: "{name} was freezed by {source} for {reason}!
+         footer: "BetterModeration For PocketMine"
+     mute-webhook:
+         color: "#ff0000" # Example: #7289da
+         title: "New Muted!"
+         description: "{name} was muted by {source} for {reason}!
+         footer: "BetterModeration For PocketMine"
+
+# Command Information
+ban-description: "Ban Command"
+kick-description: "Kick Command"
+freeze-description: "Freeze Command"
+mute-description: "Mute Command"
+
+# Commands Permission
+ban-permission: "bm.ban"
+kick-permission: "bm.kick"
+freeze-permission: "bm.freeze"
+mute-permission: "bm.mute"
+
+# Database
+# You can use mysql, sqlite, or local. Please provide the provider for the database.
+database:
+     provider: local
+     
+
+# Language Translators
+# You can change do you want to add language. You can make your own by using "custom"
+lang: english
+
+...

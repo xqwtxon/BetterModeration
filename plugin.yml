@@ -1,0 +1,11 @@
+---
+name: BetterModeration
+version: 0.0.1
+authors:
+- xqwtxon
+- z3nXxz
+api: 4.0.0
+main: BetterModeration\BetterModeration
+src-namespace-prefix: BetterModeration
+description: A plugin contains best moderations. It measure from player to their violations in certain at in-game.
+...
